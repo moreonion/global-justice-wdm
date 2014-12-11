@@ -929,10 +929,16 @@ input[type="checkbox"] {
   width: auto;
   margin-right: 5px;
 }
+.eaQuestionCheckbox,
+.eaQuestionRadio {
+  display: block;
+  margin-bottom: 0.78125em;
+}
 .eaQuestionCheckbox input,
 .eaQuestionRadio input {
   float: left;
   margin-right: 5px;
+  margin-top: 1px;
   height: 1.5625em;
 }
 .eaQuestionCheckbox label,
@@ -945,23 +951,44 @@ input[type="checkbox"] {
 .picker .picker-label {
   float: none;
   display: block;
-  margin-left: 24px;
+  margin-left: 45px;
 }
 .picker .picker-handle {
   background-color: #ffffff;
+  border: 2px solid #b0b5b8;
+}
+.picker.picker-checkbox .picker-label {
+  margin-top: 0.3em;
+}
+.picker.picker-checkbox .picker-handle {
+  width: 32px;
+  height: 32px;
+}
+.picker.picker-checkbox.checked .picker-flag {
+  background-image: url('../images/tick.png');
+}
+.picker.picker-radio .picker-label {
+  margin-top: 0;
+}
+.picker.picker-radio .picker-handle {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
 }
 .picker.picker-radio .picker-flag {
   background-color: transparent;
-  margin: 4px;
+  margin: 6px;
 }
 .picker.picker-radio.checked:hover .picker-flag {
   background-color: #999999;
 }
-.eaQuestionCheckbox .picker .picker-handle {
-  margin-top: 1px;
+.picker.multiline .picker-label {
+  margin-top: -4px;
 }
-.eaQuestionRadio .picker .picker-handle {
-  margin-top: 3px;
+.eaQuestionRadioFormFieldContainer,
+.eaQuestioncheckboxFormFieldConatainer {
+  line-height: 0;
 }
 /* ---------- select ------------------------------------------------ */
 select,
@@ -1009,9 +1036,10 @@ label,
   margin-top: 0.52083333em;
   color: #3d404a;
 }
-.picker .picker-label {
+.picker .picker-label,
+.eaQuestionRadio label,
+.eaQuestionCheckbox label {
   font-family: texgyreadventorregular, "Helvetica Neue", Helvetica, Arial, sans;
-  margin-top: 0;
 }
 .eaQuestionLabel {
   margin-bottom: 0.78125em;

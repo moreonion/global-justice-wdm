@@ -12,6 +12,14 @@ $(window).load(function(){
   if (typeof $.fn.picker == 'function') {
     $('input[type=radio], input[type=checkbox]').picker();
   }
+  // add a class for picker labels higher than the handle
+  $('.picker-label').each(function(){
+    var label = $(this);
+    var handle = label.siblings('.picker-handle');
+    if (label.height() > 25){
+      label.parent().addClass('multiline');
+    }
+  });
      
   // move validation icon next to label
   // and the error message below the label
