@@ -1086,6 +1086,9 @@ label,
   margin-left: 20%;
   color: #ae134d;
 }
+.eaErrorMessageHide {
+  display: none;
+}
 .eaErrorMessage {
   color: #ffffff;
   font-size: 0.875em;
