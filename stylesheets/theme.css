@@ -993,25 +993,55 @@ input[type="checkbox"] {
 /* ---------- select ------------------------------------------------ */
 select,
 .selecter .selecter-selected {
-  font-size: 120%;
+  font-size: 1.375em;
+  line-height: 1.13636364em;
+  margin-bottom: 1.13636364em;
+  margin-bottom: 0;
   background-color: #ffffff;
-  border: 1px solid #b0b5b8;
-  font-family: texgyreadventorregular, "Helvetica Neue", Helvetica, Arial, sans;
+  border: 2px solid #b0b5b8;
+  font-family: ITCLubalinGraphW01-Demi, Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
-  color: #202d33;
-  padding: .5em;
+  color: #717172;
+  padding: 0.9em;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+select {
+  padding: 0.7em;
+}
+.selecter .selecter-selected {
+  background-image: url('../images/select_arrow.png');
+  padding-right: 45px;
 }
 .selecter:focus .selecter-selected {
   background-color: #ffffff;
-  border: 1px solid #a3a8ac;
+  border-color: #888f94;
+}
+.selecter.open .selecter-selected {
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+select option:first-child,
+.selecter .selecter-options {
+  margin-top: -6px;
+  padding-top: 8px;
+}
+select option,
+.selecter .selecter-item {
+  font-size: 1em;
+  /* fallback */
+  font-size: 1rem;
+  padding-left: 1.25em;
+  font-family: ITCLubalinGraphW01-Demi, Georgia, Times, "Times New Roman", serif;
+  color: #676768;
 }
 .selecter {
   max-width: 100%;
-  margin-top: 0;
+  margin: 0;
 }
 .selecter .selecter-options,
 .selecter .selecter-item {
@@ -1101,7 +1131,7 @@ label,
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  padding: 0px 10px 2px 10px;
+  padding: 0 10px;
   margin-top: -2px;
 }
 .eaFieldErrorHighlightColor {
@@ -1127,6 +1157,14 @@ label,
 .validationError select,
 .validationError .selecter .selecter-selected {
   border: 2px solid #ae134d;
+}
+.validationError .eaErrorMessage {
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+.validationError .eaFormSelect ~ .eaErrorMessage {
+  margin-top: -6px;
+  padding-top: 6px;
 }
 .ea-error-block {
   color: #ae134d;
