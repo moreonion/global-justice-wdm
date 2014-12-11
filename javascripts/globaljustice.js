@@ -55,8 +55,7 @@ $(window).load(function(){
   // and hide the toggle (link)
   $('.info-toggle').on('click', function(e) {
     var $toggle = $(this);
-    var targetId = $toggle.data('toggle');
-    var $target = $('#' + targetId);
+    var $target = $('#background-info');
     // when we have found our/a target
     if ($target.length > 0) {
       $toggle.hide();
