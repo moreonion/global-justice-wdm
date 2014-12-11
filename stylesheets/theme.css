@@ -1391,13 +1391,19 @@ ul.share-links li a:link span,
 ul.share-links li a:visited span {
   padding-left: 70px;
 }
-ul.share-links .twitter i {
+ul.share-links .twitter i,
+ul.share-links .twitter em,
+ul.share-links .twitter span.icon {
   background: url(../images/share_icons.png) no-repeat 0% -10px transparent;
 }
-ul.share-links .facebook i {
+ul.share-links .facebook i,
+ul.share-links .facebook em,
+ul.share-links .facebook span.icon {
   background: url(../images/share_icons.png) no-repeat 0% -95px transparent;
 }
-ul.share-links .email i {
+ul.share-links .email i,
+ul.share-links .email em,
+ul.share-links .email span.icon {
   background: url(../images/share_icons.png) no-repeat 0% -174px transparent;
 }
 /* ==================================================================
