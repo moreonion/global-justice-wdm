@@ -1143,6 +1143,15 @@ label,
   padding: 0;
   list-style-type: none;
 }
+#eaerrors {
+  padding: 0.78125em 3%;
+  color: #ffffff;
+  margin-bottom: 1.5625em;
+}
+#eaerrors a {
+  color: #ffffff;
+  text-decoration: underline;
+}
 /* ==================================================================
  * contact lists
  * ================================================================== */
@@ -1363,7 +1372,13 @@ ul.share-links li a:visited {
 }
 ul.share-links li a i,
 ul.share-links li a:link i,
-ul.share-links li a:visited i {
+ul.share-links li a:visited i,
+ul.share-links li a em,
+ul.share-links li a:link em,
+ul.share-links li a:visited em,
+ul.share-links li a span.icon,
+ul.share-links li a:link span.icon,
+ul.share-links li a:visited span.icon {
   position: absolute;
   height: 50px;
   width: 60px;
