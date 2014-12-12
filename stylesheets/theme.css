@@ -1139,6 +1139,14 @@ label,
 .eaMandatoryFieldMarker {
   color: #ae134d;
 }
+/* ---------- specific form fields ---------------------------------- */
+#EAF_template_message_subjectDiv {
+  margin-top: 0.52083333em;
+}
+#MORE_ONION_TTIP_email_share_message {
+  margin-top: 0.52083333em;
+  height: 15em;
+}
 /* ---------- loading ----------------------------------------------- */
 .ea-loading {
   position: absolute;
@@ -1215,7 +1223,14 @@ label,
   /* IE7 Fixes */
   *margin-top: 2px;
 }
-.validationError input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="url"], textarea,
+.validationError input[type="text"],
+.validationError input[type="email"],
+.validationError input[type="number"],
+.validationError input[type="password"],
+.validationError input[type="search"],
+.validationError input[type="tel"],
+.validationError input[type="url"],
+.validationError textarea,
 .validationError select,
 .validationError .selecter .selecter-selected {
   border: 2px solid #ae134d;
