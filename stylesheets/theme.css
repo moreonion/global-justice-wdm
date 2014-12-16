@@ -787,6 +787,7 @@ h6 {
 /* ---------- general stuff ----------------------------------------- */
 .eaFormField {
   position: relative;
+  margin-bottom: 0.52083333em;
 }
 .ea-hidden {
   display: none;
@@ -991,21 +992,38 @@ input[type="checkbox"] {
   width: auto;
   margin-right: 5px;
 }
+.eaFormCheckbox,
 .eaQuestionCheckbox,
+.eaFormRadio,
 .eaQuestionRadio {
   display: block;
   margin-bottom: 0.78125em;
 }
+.eaFormCheckbox input,
 .eaQuestionCheckbox input,
+.eaFormRadio input,
 .eaQuestionRadio input {
   float: left;
+  clear: left;
   margin-right: 5px;
   margin-top: 1px;
   height: 1.5625em;
 }
+.eaFormCheckbox label,
 .eaQuestionCheckbox label,
+.eaFormRadio label,
 .eaQuestionRadio label {
   margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+.eaFormCheckbox .picker,
+.eaFormRadio .picker {
+  margin-bottom: 0.78125em;
+}
+.eaFormCheckbox .picker:first-of-type,
+.eaFormRadio .picker:first-of-type {
+  margin-top: 0.78125em;
 }
 .picker {
   margin-bottom: 0;
@@ -1048,7 +1066,9 @@ input[type="checkbox"] {
 .picker.multiline .picker-label {
   margin-top: -4px;
 }
+.eaFormRadio,
 .eaQuestionRadioFormFieldContainer,
+.eaFormCheckbox,
 .eaQuestionCheckboxFormFieldContainer {
   line-height: 0;
 }
@@ -1130,7 +1150,9 @@ label,
 }
 .picker .picker-label,
 .eaQuestionRadio label,
-.eaQuestionCheckbox label {
+.eaQuestionCheckbox label,
+.eaFormRadio label,
+.eaFormCheckbox {
   font-family: texgyreadventorregular, "Helvetica Neue", Helvetica, Arial, sans;
 }
 .eaQuestionLabel {
