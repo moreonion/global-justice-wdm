@@ -9,14 +9,15 @@
 
 # background info
 
-* die Klasse .info-toggle enabled to show-Funktionalität
-* das JS schaut in data-toggle nach, wie die id des zu zeigenden Elements lautet
-* mit Klick auf den Toggle wird das Element angezeigt und der Toggle versteckt
-* die Klasse .background-info-hidden am Background-Info-Container bewirkt, dass
-  der Container beim Laden der Seite mittels JS versteckt wird
+* the class `.info-toggle` on the element enables the "show more info" logic
+* a click on the toggle shows the element with the id `#background-info` and
+  hides the toggle
+* the class `.background-info-hidden` on the more info container sets the
+  container to be hidden on page load (this is done that way to show the
+  background info in case JS is disabled)
 
     <a class="info-toggle">More info</a>
-
+    
     <div id="background-info" class="background-info-hidden">
       <h2>Background info</h2>
       <p>more more more info</p>
@@ -24,9 +25,9 @@
 
 # videos
 
-<div class="video">
- Paste the embed code from youtube, vimeo, ... here
-</div>
+    <div class="video">
+      Paste the embed code from youtube, vimeo, ... here
+    </div>
 
 # share links
 
@@ -65,7 +66,7 @@ snippets for inclusion of logos at the bottom of a form
 
 use this snippet for the copy box above the actual form (the class adds a separator below the text)
 
-<div class="intro">
-  <h2>Form Heading</h2>
-  <p> Form Intro Text ... </p>
-</div>
+    <div class="intro">
+      <h2>Form Heading</h2>
+      <p> Form Intro Text ... </p>
+    </div>
