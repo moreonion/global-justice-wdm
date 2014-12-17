@@ -832,6 +832,9 @@ br[clear="all"] {
     padding-right: 3%;
   }
 }
+#right_wrapper1 {
+  padding-top: 1.5625em;
+}
 /* ---------- intro ------------------------------------------------- */
 .en_right_wrapper h1,
 .ea-form-wrapper h1,
@@ -875,6 +878,11 @@ br[clear="all"] {
     margin-left: -8%;
     margin-right: -8%;
   }
+}
+#right_wrapper1 h1,
+#right_wrapper1 h2,
+#right_wrapper1 .ea-heading2 {
+  margin-top: -25px;
 }
 .en_right_wrapper .intro:after {
   content: '';
@@ -1294,6 +1302,8 @@ label,
   list-style-type: none;
 }
 #eaerrors {
+  font-size: 1em;
+  line-height: 1.5625em;
   padding: 0.78125em 3%;
   color: #ffffff;
   margin-bottom: 1.5625em;
