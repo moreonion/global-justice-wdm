@@ -1371,19 +1371,19 @@ label,
   margin: 0.2em 2% 0.78125em;
 }
 /* ---------- payment icons ----------------------------------------- */
-form.eaform #right_wrapper1 {
+form.eaform .en_right_wrapper {
   padding-bottom: 60px;
   position: relative;
 }
-form.eaform #right_wrapper1.no-payment-icons {
+form.eaform .en_right_wrapper.no-payment-icons {
   padding-bottom: 0;
 }
 @media screen and (min-width: 520px) {
-  form.eaform #right_wrapper1.no-payment-icons {
+  form.eaform .en_right_wrapper.no-payment-icons {
     padding-bottom: 1.5625em;
   }
 }
-form.eaform #right_wrapper1 .payment-icons {
+form.eaform .en_right_wrapper .payment-icons {
   background: #e5e6e8;
   width: 100%;
   text-align: center;
@@ -1394,7 +1394,7 @@ form.eaform #right_wrapper1 .payment-icons {
   height: 40px;
   left: 0;
 }
-form.eaform #right_wrapper1 .payment-icons img {
+form.eaform .en_right_wrapper .payment-icons img {
   max-width: 20%;
 }
 /* ==================================================================
