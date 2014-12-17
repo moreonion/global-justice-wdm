@@ -16,12 +16,14 @@
   container to be hidden on page load (this is done that way to show the
   background info in case JS is disabled)
 
-    <a class="info-toggle">More info</a>
-    
-    <div id="background-info" class="background-info-hidden">
-      <h2>Background info</h2>
-      <p>more more more info</p>
-    </div>
+```html
+<a class="info-toggle">More info</a>
+
+<div id="background-info" class="background-info-hidden">
+  <h2>Background info</h2>
+  <p>more more more info</p>
+</div>
+```
 
 # videos
 
