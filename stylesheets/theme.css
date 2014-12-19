@@ -714,6 +714,7 @@ h6 {
 #main {
   width: 88%;
   min-width: 290px;
+  overflow: visible;
 }
 #main .en_left_wrapper,
 #main .en_right_wrapper {
@@ -1117,9 +1118,10 @@ select {
   background-image: url('../images/select_arrow.png');
   padding-right: 45px;
 }
-.selecter:focus .selecter-selected {
+.selecter:focus .selecter-selected,
+.selecter .selecter-options {
   background-color: #ffffff;
-  border-color: #888f94;
+  border: 2px solid #888f94;
 }
 .selecter.open .selecter-selected {
   -webkit-border-radius: 9px;
