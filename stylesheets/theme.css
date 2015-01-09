@@ -974,7 +974,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="passw
   font-size: 1.375em;
   line-height: 1.13636364em;
   margin-bottom: 1.13636364em;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   background-color: #ffffff;
   border: 2px solid #b0b5b8;
   font-family: ITCLubalinGraphW01-Demi, Georgia, Times, "Times New Roman", serif;
@@ -1005,6 +1005,9 @@ textarea,
 }
 .eaMessageSignoffContainer {
   display: none;
+}
+#Card_verification_number {
+  width: 4.4em;
 }
 /* ---------- checkbox & radio -------------------------------------- */
 input[type="checkbox"] {
@@ -1091,6 +1094,9 @@ input[type="checkbox"] {
 .eaQuestionCheckboxFormFieldContainer {
   line-height: 0;
 }
+#Gift_AidDiv .eaQuestionCheckbox label {
+  font-size: 0.85em;
+}
 /* ---------- select ------------------------------------------------ */
 select,
 .selecter .selecter-selected {
@@ -1153,6 +1159,12 @@ select option,
 }
 .eaQuestionSelectFormFieldContainer {
   position: relative;
+}
+#Credit_Card_ExpirationField .selecter {
+  display: inline-block;
+}
+#Credit_Card_ExpirationField select {
+  width: auto;
 }
 /* ---------- label, legend, description ---------------------------- */
 label,

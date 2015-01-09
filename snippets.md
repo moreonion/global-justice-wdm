@@ -69,10 +69,11 @@ snippets for inclusion of logos at the bottom of a form
 
 ```html
 <div class="payment-icons">
-  <img alt="Logo secure pay" title="Secure payment" src="//moreonion.github.io/global-justice-wdm/images/payment_secure.png">
-  <img alt="Logo VISA" title="Payable with VISA" src="//moreonion.github.io/global-justice-wdm/images/payment_visa.png">
-  <img alt="Logo MasterCard" title="Payable with MasterCard" src="//moreonion.github.io/global-justice-wdm/images/payment_mastercard.png">
-  <img alt="Logo Direct Debit" title="Payable with direct debit" src="//moreonion.github.io/global-justice-wdm/images/payment_dd.png">
+  <img alt="Logo secure pay" title="Secure payment" src="//moreonion.github.io/global-justice-wdm/images/payment_secure.png" />
+  <img alt="Logo VISA" title="Payable with VISA" src="//moreonion.github.io/global-justice-wdm/images/payment_visa.png" />
+  <img alt="Logo MasterCard" title="Payable with MasterCard" src="//moreonion.github.io/global-justice-wdm/images/payment_mastercard.png" />
+  <img alt="Logo PayPal" title="Payable with PayPal" src="//moreonion.github.io/global-justice-wdm/images/payment_paypal.png" />
+  <img alt="Logo Direct Debit" title="Payable with direct debit" src="//moreonion.github.io/global-justice-wdm/images/payment_dd.png" />
 </div>
 ```
 
