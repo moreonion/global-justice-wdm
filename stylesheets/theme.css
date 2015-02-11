@@ -1180,6 +1180,9 @@ label,
   margin-top: 0.52083333em;
   color: #3d404a;
 }
+.eaQuestionLabel label {
+  display: inline;
+}
 .picker .picker-label,
 .eaQuestionRadio label,
 .eaQuestionCheckbox label,
