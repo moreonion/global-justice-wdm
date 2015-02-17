@@ -2,11 +2,21 @@
 
 ```html
 <div class="pgbar-thermometer">
-  <div class="t_body">
-    <div class="t_level">&nbsp;</div>
-  </div>
-  <span class="t_current">0</span> people have taken action
+<div class="t_body">
+<div class="t_level"> </div>
 </div>
+<span class="t_current">0</span> people have taken action
+</div>
+<script type="text/javascript">// <![CDATA[
+$(function(){
+  $('.thermometer').eActivistThermometer({
+    token:'aaca5a76-0f02-4e3a-a546-1cf6bafabe56',
+    campaignId:35548,
+    target:10000,
+    initialValue: 20
+  });
+});
+// ]]></script>
 ```
 
 # background info
