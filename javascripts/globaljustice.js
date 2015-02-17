@@ -43,7 +43,7 @@ $(window).load(function(){
   $('.pgbar-thermometer').eActivistThermometer({
     // Global justice test campaign
     token: 'aaca5a76-0f02-4e3a-a546-1cf6bafabe56',
-    campaignId: 34164,
+    campaignId: $('input[name="ea.campaign.id"]').val(),
     target: 250,
     initialValue: 0,
     targetDataColumn: 'participatingSupporters'
