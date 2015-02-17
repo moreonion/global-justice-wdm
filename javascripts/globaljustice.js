@@ -39,12 +39,15 @@ $(window).load(function(){
       self.parent().addClass('validationError');
     }
   });
-
+  if (typeof window.wdm === "undefined" || typeof window.wdm.thermometerTarget === "undefined") {
+    window.wdm = window.wdm || {};
+    window.wdm.thermometerTarget = 250; 
+  }
   $('.pgbar-thermometer').eActivistThermometer({
     // Global justice test campaign
     token: 'aaca5a76-0f02-4e3a-a546-1cf6bafabe56',
     campaignId: $('input[name="ea.campaign.id"]').val(),
-    target: 250,
+    target: window.wdm.thermometerTarget,
     initialValue: 0,
     targetDataColumn: 'participatingSupporters'
   });
