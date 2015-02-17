@@ -1,13 +1,15 @@
 # progress bar
 
 ```html
-<div class="pgbar-thermometer">
+<div class="pgbar-thermometer" data-target="250">
   <div class="t_body">
     <div class="t_level">&nbsp;</div>
   </div>
   <span class="t_current">0</span> people have taken action
 </div>
 ```
+
+Change the value of data-target according to your needs.
 
 # background info
 

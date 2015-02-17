@@ -39,15 +39,21 @@ $(window).load(function(){
       self.parent().addClass('validationError');
     }
   });
-  if (typeof window.wdm === "undefined" || typeof window.wdm.thermometerTarget === "undefined") {
-    window.wdm = window.wdm || {};
-    window.wdm.thermometerTarget = 250; 
+
+  var $thermometerEl = $('.pgbar-thermometer');
+  var thermometerTarget = 250; // default
+  var thermometerDataTarget = $thermometerEl.data('target');
+  if (typeof thermometerDataTarget !== 'undefined') {
+    var parsedTarget = parseInt(thermometerDataTarget, 10);
+    if (!isNaN(parsedTarget) && parsedTarget > 0) {
+      thermometerTarget = parsedTarget;
+    }
   }
-  $('.pgbar-thermometer').eActivistThermometer({
+  $thermometerEl.eActivistThermometer({
     // Global justice test campaign
     token: 'aaca5a76-0f02-4e3a-a546-1cf6bafabe56',
     campaignId: $('input[name="ea.campaign.id"]').val(),
-    target: window.wdm.thermometerTarget,
+    target: thermometerTarget,
     initialValue: 0,
     targetDataColumn: 'participatingSupporters'
   });
