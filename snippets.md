@@ -1,7 +1,7 @@
 # progress bar
 
 ```html
-<div class="pgbar-thermometer" data-target="250">
+<div class="pgbar-thermometer" data-target="250" data-start="0" data-service="EaEmailAOTarget">
   <div class="t_body">
     <div class="t_level">&nbsp;</div>
   </div>
@@ -9,7 +9,7 @@
 </div>
 ```
 
-Change the value of data-target according to your needs.
+Change the value of data-target according to your needs. Change data-start to add an initial value for the progress bar, e.g. offline supporters. Use data-service="NetDonor" on donation pages. If the data-attributes are missing, the default values shown above will be used instead.
 
 # background info
 

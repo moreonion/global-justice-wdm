@@ -20,7 +20,7 @@ $(window).load(function(){
       label.parent().addClass('multiline');
     }
   });
-     
+
   // move validation icon next to label
   // and the error message below the label
   $('.eaErrorMessage').each(function() {
@@ -42,6 +42,8 @@ $(window).load(function(){
 
   var $thermometerEl = $('.pgbar-thermometer');
   var thermometerTarget = 250; // default
+  var thermometerStart = 0; // default
+  var thermometerService = 'EaEmailAOTarget'; // default: campaign
   var thermometerDataTarget = $thermometerEl.data('target');
   if (typeof thermometerDataTarget !== 'undefined') {
     var parsedTarget = parseInt(thermometerDataTarget, 10);
@@ -49,12 +51,26 @@ $(window).load(function(){
       thermometerTarget = parsedTarget;
     }
   }
+  var thermometerDataStart = $thermometerEl.data('start');
+  if (typeof thermometerDataStart !== 'undefined') {
+    var parsedStart = parseInt(thermometerDataStart, 10);
+    if (!isNaN(parsedStart) && parsedStart > 0) {
+      thermometerStart = parsedStart;
+    }
+  }
+  var thermometerDataService = $thermometerEl.data('service');
+  if (typeof thermometerDataService !== 'undefined') {
+     if (thermometerDataService == 'NetDonor' || thermometerDataService == 'EaEmailAOTarget') {
+      thermometerService = thermometerDataService;
+    }
+  }
   $thermometerEl.eActivistThermometer({
-    // Global justice test campaign
+  // Global justice test campaign
     token: 'aaca5a76-0f02-4e3a-a546-1cf6bafabe56',
     campaignId: $('input[name="ea.campaign.id"]').val(),
     target: thermometerTarget,
-    initialValue: 0,
+    initialValue: thermometerStart,
+    service: thermometerService,
     targetDataColumn: 'participatingSupporters'
   });
 
