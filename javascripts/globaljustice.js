@@ -40,6 +40,20 @@ $(window).load(function(){
     }
   });
 
+  // undo EN contact list formatting
+  $('.eaContactNameContainer').each(function(){
+    var $checkbox = $(this).children('.eaContactSelectCheckbox');
+    if ($checkbox.length) {
+      // keep checkbox + label, remove node text + &nbsp;s but not links
+      var $link = $(this).children('a')
+      $(this).addClass('has-checkbox').wrapInner('<div class="remove"></div>');
+      if ($link.length){
+        $('label', this).text('').append($link);
+      }
+      $('.remove', this).replaceWith($checkbox);
+    }
+  });
+
   var $thermometerEl = $('.pgbar-thermometer');
   var thermometerTarget = 250; // default
   var thermometerStart = 0; // default

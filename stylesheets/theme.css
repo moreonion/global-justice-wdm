@@ -1427,142 +1427,122 @@ form.eaform .en_right_wrapper .payment-icons img {
 /* ==================================================================
  * contact lists
  * ================================================================== */
+.eaRecipientBlock,
+.eaSenderBlock {
+  margin-top: 1.5625em;
+  margin-bottom: 1.5625em;
+}
+.eaRecipientBlock br:first-child,
+.eaSenderBlock br:first-child {
+  display: none;
+}
 /* ---------- contact ----------------------------------------------- */
 /* select contact instruction text */
+.eaSelectContactInstruction {
+  display: block;
+}
 /* container for contacts */
 .eaContactsContainer {
-  float: left;
-  width: 95%;
-  position: relative;
   padding: 10px;
   background-color: #ffffff;
-  margin-top: 10px;
+  margin-top: 1.5625em;
+  margin-bottom: 1.5625em;
 }
 /* contact name container */
 .eaContactNameContainer {
-  float: left;
-  position: relative;
-  clear: left;
-  font-family: texgyreadventorbold, "Helvetica Neue", Helvetica, Arial, sans;
-  padding-right: 10px;
-  width: 48%;
-  height: 25px;
+  font-weight: bold;
 }
 /* contact organization container */
-.eaContactOrgContainer {
-  float: left;
-  width: 48%;
-  position: relative;
+/* contact party container */
+/* contact position container */
+.eaContactNameContainer.has-checkbox ~ .eaContactOrgContainer,
+.eaContactNameContainer.has-checkbox ~ .eaContactPositionContainer,
+.eaContactNameContainer.has-checkbox ~ .eaContactPartyContainer {
+  margin-left: 45px;
+}
+.eaContactNameContainer.has-checkbox + .eaContactOrgContainer,
+.eaContactNameContainer.has-checkbox + .eaContactPositionContainer,
+.eaContactNameContainer.has-checkbox + .eaContactPartyContainer {
+  margin-top: -10px;
 }
 /* contact biographyLink container */
 .eaContactBiographyLinkContainer {
-  float: left;
   position: relative;
-  font-family: texgyreadventorbold, "Helvetica Neue", Helvetica, Arial, sans;
-  height: 25px;
+  font-weight: bold;
   padding-top: 4px;
-  width: 125px;
 }
 /* contact biography container */
 .eaContactBiographyContainer {
-  float: left;
   position: relative;
-  width: 90%;
-  clear: left;
   padding-left: 0;
   padding-right: 0;
 }
 /* contact biography list */
 .eaContactBiographyList {
-  float: left;
   position: relative;
-  width: 350px;
   margin-top: 20px;
 }
 /* contact biography line container */
 .eaContactBiographyLineContainer {
-  clear: left;
   padding-left: 0px;
   padding-bottom: 5px;
   list-style-type: disc;
 }
 .eaContactBiographyPictureContainer {
-  float: left;
   position: relative;
   width: 125px;
 }
 /* contact select checkbox */
-.eaContactSelectCheckbox {
-  color: #666666;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  margin-right: 5px;
+.eaContactSelectCheckbox label {
+  position: static!important;
 }
 /* ---------- Multiple contact tabbed list--------------------------- */
 /* container for a contact */
 .eaContactContainer {
-  float: left;
-  width: 98%;
   position: relative;
   padding-left: 5px;
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #b0b5b8;
   background-color: #fff;
 }
 /* container for a contact's detail */
 .eaContactDetailContainer {
-  float: left;
-  width: 98%;
   position: relative;
-  padding-top: 10px;
-  padding-left: 5px;
-  clear: left;
   margin-top: 10px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 /* container for a contact's issue comments */
 .eaContactCommentContainer {
   position: relative;
-  float: left;
-  clear: left;
   margin-left: 0px;
-  width: 98%;
   padding-top: 10px;
   padding-left: 10px;
   border: 1px solid #bfbfbf;
-  height: 200px;
   overflow: auto;
 }
 /* contact issue status icon container */
 .eaContactIssueStatusContainer {
   position: relative;
-  float: right;
   padding-right: 10px;
 }
-/* contact party container */
-.eaContactPartyContainer {
-  float: left;
-  clear: both;
-  margin-left: 200px;
-  width: 200px;
-  top: -10px;
-  position: relative;
-  padding-left: 10px;
+.eaContactTabsContainer,
+.eaContactTabs,
+.contactTabContent {
+  float: none!important;
 }
-/* contact position container */
-.eaContactPositionContainer {
-  float: left;
-  width: 50%;
-  position: relative;
-  padding-left: 0px;
+.eaContactTabs {
+  margin-bottom: 15px;
+}
+.eaContactTabs a {
+  background-color: white;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .contactTabContent {
-  padding-left: 5px;
-  padding-bottom: 5px;
-  width: 95%;
+  padding: 10px!important;
+  width: auto!important;
 }
 /* ---------- images ------------------------------------------------ */
 .ea-contact-bio-image {
