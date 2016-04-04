@@ -1493,6 +1493,9 @@ form.eaform .en_right_wrapper .payment-icons img {
   width: 125px;
 }
 /* contact select checkbox */
+.eaContactSelectCheckbox {
+  float: none!important;
+}
 .eaContactSelectCheckbox label {
   position: static!important;
 }
