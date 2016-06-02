@@ -1069,6 +1069,13 @@ input[type="checkbox"] {
 .picker.picker-checkbox.checked .picker-flag {
   background-image: url('../images/tick.png');
 }
+.picker.picker-checkbox.checked .picker-flag:before {
+  content: "✓";
+  font-size: 200%;
+  line-height: 30px;
+  padding: 5px;
+  color: transparent;
+}
 .picker.picker-radio .picker-label {
   margin-top: 0;
 }
